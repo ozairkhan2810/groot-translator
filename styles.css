@@ -14,14 +14,17 @@ body {
 
 nav {
     background-color: var(--primary);
-    color: black;
+    color: rgb(69, 172, 22);
     text-align: center;
     font-size: large;
-    padding: 2em;
+    font-style: italic;
+    padding-bottom: 2rem;
 }
 
-h1 {
+nav h1 {
     margin: 0;
+    padding-top: 1rem;
+    background-color: rgb(29, 51, 112);
 }
 
 h2 {
@@ -54,10 +57,11 @@ button {
     background-color: var(--primary);
     border: 1px solid var(--black);
     border-radius: 6px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 0.5rem auto;
     padding: 0.3em;
     width: max-content;
+    color: rgb(69, 172, 22);
 }
 
 #translate-output {
@@ -78,6 +82,7 @@ footer {
 }
 
 footer .about {
+    color: rgb(69, 172, 22);
     padding: 0;
     font-size: 1.5rem;
 }
