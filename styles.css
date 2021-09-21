@@ -1,19 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
-*, *::before, *::after {
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 1.3rem;
-} */
-
 * {
     margin: 0;
 }
 
 :root {
-    --primary: #49910a;
+    --primary: #d1d1d1;
     --black: #333333;
     --width-break: 600px
 }
@@ -24,19 +14,19 @@ body {
 
 nav {
     background-color: var(--primary);
-    color: white;
+    color: black;
     text-align: center;
-    padding: 0.5em;
+    font-size: large;
+    padding: 2em;
 }
 
 h1 {
     margin: 0;
 }
 
-img {
-    display: block;
-    width: 10rem;
-    margin: auto;
+h2 {
+    padding-top: 1rem;
+    text-align: center;
 }
 
 main {
@@ -68,10 +58,6 @@ button {
     margin: 0.5rem auto;
     padding: 0.3em;
     width: max-content;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 #translate-output {
