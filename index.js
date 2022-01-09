@@ -4,16 +4,14 @@ let translateOutput = document.querySelector("#translate-output")
 
 const SERVER_URL = "https://api.funtranslations.com/translate/groot.json";
 
-translateButton.addEventListener("click", fetchTranslated);
-
-function fetchTranslated() {
+let fetchTranslated = () => {
     let inputText = translateInput.value;
     if (inputText == "") {
         alert("Please enter some text");
         return;
     }
 
-    const url = SERVER_URL + "?" + "text=" + inputText;
+    const url = `${SERVER_URL}?text=${inputText}`;
     fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -26,3 +24,5 @@ function fetchTranslated() {
             alert("Not response from server!");
         })
 }
+
+translateButton.addEventListener("click", fetchTranslated);
